@@ -63,7 +63,7 @@ export class FormControlTest{
 | customvalidator | string[]   | This is the custom validation method name array, there are declared and registor by user                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ## How to use in ts
-
+* Online example [how to use](https://stackblitz.com/edit/angular-ivy-yndwp6)<br><br>
 * declare the service in constructor method<br>
   ` constructor(private strutFormHelper:FormHelperLibService)`<br><br>
 
@@ -177,7 +177,7 @@ export class FormControlTest{
     
     ```
     this.formcontrolStrutHelp.initForm(con);
-    // or this.formcontrolStrutHelp.initForm(con, ()=>FormControlTest);
+    // or this.formcontrolStrutHelp.initForm(con, FormControlTest);
     this.myFormGroup = this.formcontrolStrutHelp.getFormGroup();
     ```
   
