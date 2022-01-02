@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "6991388f-adc2-4c62-b260-ff91b28103ee"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "form-helper-lib": {
+      "projectType": "library",
+      "root": "projects/form-helper-lib",
+      "sourceRoot": "projects/form-helper-lib/src",
+      "prefix": "form-help",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/form-helper-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/form-helper-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/form-helper-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/form-helper-lib/src/test.ts",
+            "tsConfig": "projects/form-helper-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/form-helper-lib/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "form-helper-lib"
+}

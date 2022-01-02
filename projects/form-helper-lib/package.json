@@ -1,0 +1,29 @@
+{
+  "name": "ngform-helper-eli",
+  "version": "0.0.7",
+  "license": "MIT",
+  "author": "Yilei & Jerry Tay <bylhyh@gmail.com>",
+  "description": "It simplifies generating FormGroup or FormArray",
+  "keywords": [
+    "angular FormControl",
+    "angular FormGroup",
+    "angular FormArray",
+    "Angular"
+  ],
+  "repository": "https://github.com/bookinguself/ngform-helper-eli",
+  "homepage": "https://stackblitz.com/edit/angular-ivy-yndwp6",
+  "bugs": {
+    "email": "bylhyh@gmail.com",
+    "url": "https://github.com/bookinguself/ngform-helper-eli/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "class-transformer": "^0.4.0",
+    "reflect-metadata": "^0.1.13",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
